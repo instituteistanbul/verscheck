@@ -1,0 +1,5 @@
+# Determine which openCV version were using
+if cv2.__version__.startswith('2.'):
+    detector = cv2.SimpleBlobDetector()
+else:
+    detector = cv2.SimpleBlobDetector_create()
